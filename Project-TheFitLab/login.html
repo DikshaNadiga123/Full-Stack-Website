@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input id="username" type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input id="password" type="password" placeholder="Password" required>
+                <i class='bx bxs-lock' ></i>
+            </div>
+            
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p> Don't have an account?<a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB2/Project-TheFitLab/Project-TheFitLab/signup.html"> Register </a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Fetch the form data
+            const formData = new FormData();
+            const username = document.getElementById("username").value; // Assuming email input is used for username
+            const password = document.getElementById("password").value;
+
+            // Send POST request to backend server's /login endpoint
+            fetch("http://localhost:3000/login", {
+                method: "POST",
+                headers: {
+                        "Content-Type": "application/json",
+                    },
+                body: JSON.stringify({ username, password }),
+            })
+            .then((response) => response.json())
+                .then((data) => {
+                    alert(data.message); // Show response message
+                    if (data.message === "Login successful") {
+                        window.location.href = "fit1.html"; // Redirect if signup successful
+                    }
+                })
+            .catch(error => {
+                console.error("There was a problem with the fetch operation:", error);
+            });
+        });
+    </script>
+</body>
+</html>

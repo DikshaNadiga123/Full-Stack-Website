@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FITLAB</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+  </head>
+  <body>
+    <style>
+      .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    
+    img {
+      max-width: 100%;
+      max-height:100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    
+    .text {
+      font-size: 20px;
+      padding-left: 20px;
+      color:aliceblue;
+    }
+  
+    .content-container {
+              display: flex;
+              max-width: 1000px;
+              border: 2px solid #ddd;
+              border-radius: 10px;
+              overflow: hidden;
+              background-color: #f9f9f9;
+          }
+
+
+          *{
+        font-family: 'poppins', 'sans-serif';
+        box-sizing: border-box;
+    }
+
+    .footer{
+        margin-top:150px;
+        width:100%;
+        padding:100px 15%;
+        background:#333;
+        color:#efefef;
+        display:flex;
+    }
+    .footer div{
+        text-align: center;
+    }
+
+    .col-2{
+        flex-grow:2;
+    }
+
+    .footer div h3{
+        font-weight:300;
+        margin-bottom: 30px;
+        letter-spacing:1px ;
+    }
+
+    .col-1 a{
+        display:block;
+        text-decoration:none ;
+        color: #efefef;
+        margin-bottom: 10px;
+    }
+    form input{
+        width:400px;
+        height: 45px;
+        border-radius: 4px;
+        text-align:center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        outline:none;
+        border:none;
+    }
+    .social-icons{
+        margin-top:30px;
+        color:#efefef;
+    }
+    .social-icons i{
+        font-size:22px;
+        margin:10px;
+        cursor:pointer;
+        color:#efefef;
+    }
+
+   
+ 
+      </style>
+
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB/full%20stack/fit.html"><img src="C:\Users\Diksha N\OneDrive\Desktop\The Fit .png" height="100px" width="200px"></a></div>
+        <ul class=" links">
+          <li><a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB/full%20stack/fit.html">Home</a></li>
+          <li><a href="https://www.sciencedaily.com/news/health_medicine/fitness/">News</a></li>
+          <li><a href="hh.html">Articles</a></li>
+          <li><a href="about us.html">About Us</a></li>
+        </ul>
+        
+      </div>
+      <div class="dropdown_menu ">
+      <li><a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB/fitness.html">Home</a></li>
+          <li><a href="news">News</a></li>
+          <li><a href="hh.html">Articles</a></li>
+          <li><a href="about us.html">About Us</a></li>
+        
+    </header>
+   <div class="slider">
+     <div class="myslider fade" style="display: block;">
+      <div class="txt">
+      <h1> YOUR JOURNEY STARTS HERE</h1>
+      <p> Join and grow with us </p>
+     </div>
+     <img src="C:\Users\Diksha N\Downloads\img9 (1).jpg" style="width :100% ;height :100% ">
+    </div>
+
+
+    <div class="myslider fade">
+      <div class="txt">
+      <h1>IF IT DOESN'T CHALLENGE YOU ,<br> IT WON'T CHANGE YOU</h1>
+      <p>  </p></div>
+      <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGd5bXxlbnwwfHwwfHx8MA%3D%3D" style="width :100% ;height :100% ">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="dotsbox" style="text-align: center;">
+      <span class="dot" onlick="currentSlide(1)"></span>
+      <span class="dot" onlick="currentSlide(2)"></span>
+
+    </div>
+   </div>
+   
+    <script src="C:\Users\Diksha N\OneDrive\Desktop\WEB\full stack\main.js" >
+    
+      const toggleBtn =document.querySelector('.toggle_btn')
+      const toggleBtnIcon=document.querySelector('.toggle_btn i')
+      const dropdown_menu=document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function()
+      {
+        dropdown_menu.classList.toggle('open')
+        const isOpen =dropdown_menu.classList.contains('open')
+        toggleBtnIcon.classList= isOpen
+        ? 'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+      }
+    </script>
+    
+    <div class="row">
+      <div class="imgWrapper">
+        <img src="https://i.pinimg.com/736x/8d/bd/6c/8dbd6c6f4d0bf1e9044300f4000bfb8e.jpg" style="border-radius: 0.3;">
+      </div>
+      <div  class="contentWrapper">
+        <div class="content">
+          <h2> Fitness is not about being better than someone else;
+             it's about being better than you used to be.</h2>
+             <p >Engaging in regular workouts not only enhances physical fitness but also releases endorphins,
+              extend beyond the physical, creating a compelling allure for those seeking a balanced and vibrant lifestyle. </p>
+              <A HREF="workout.html">learn more</A>
+            </div>
+      </div>
+      <div class="imgWrapper">
+        <img src="https://www.theladders.com/wp-content/uploads/phone-home-190712-800x450.jpg" style="border-radius: 0.3;">
+      </div>
+      <div  class="contentWrapper">
+        <div class="content">
+          <h2> Fitness is not just a destination; it's a journey of self-discovery and resilience</h2>
+          <p>Embark on a journey of wellness through insightful articles that unravel the myriad health 
+            benefits and fitness revelations, guiding you towards a vibrant and empowered life.
+             Dive into a treasure trove of knowledge that not only demystifies the secrets of physical 
+             well-being but inspires a transformative perspective on embracing a healthier, more fulfilling lifestyle.</p>
+             
+              <A HREF="hh.html">learn more</A>
+            </div>
+      </div>
+      <div class="imgWrapper">
+        <img src="https://www.fedhealth.co.za/media/4475/vegan.webp" style="border-radius: 0.3;">
+      </div>
+      <div  class="contentWrapper">
+        <div class="content">
+          <h2>You don't have to eat less , you just need to eat right</h2>
+          <p>Embark on a journey of wellness through insightful articles that unravel the myriad health 
+            benefits and fitness revelations, guiding you towards a vibrant and empowered life.
+             Dive into a treasure trove of knowledge that not only demystifies the secrets of physical 
+             well-being but inspires a transformative perspective on embracing a healthier, more fulfilling lifestyle.</p>
+              <A HREF="food.html">learn more</A>
+            </div>
+      </div>
+    </div>
+
+   
+    <h1 style="color:white;text-align: center;">  Why we need to be Fit?</h1>
+    <div class="container1">
+      
+      <div class="box">
+          <h3>Stength</h3>
+          <p> Keeping bones, joints, and muscles healthy can help ensure that you’re
+             able to do your daily activities and be physically active.
+             Muscle-strengthening activities 
+              can help you increase or maintain your muscle mass and strength.</p>
+          <a href="workout.html"><button>more</button></a>
+          <span class="count">1</span>
+      </div>
+      <div class="box">
+          <h3>Metabolism</h3>
+          <p>By exercising, you burn calories both when you are and aren’t moving.
+             With regular resistance training (like weight-based workouts),
+             you’ll maximise your lean body mass and increase your overall metabolic rate.</p>
+          <a href="https://www.healthline.com/nutrition/10-ways-to-boost-metabolism#eat-protein"><button>more</button></a>
+          <span class="count">2</span>
+      </div>
+      <div class="box">
+          <h3>Sleep</h3>
+          <p>Exercising supports you in both falling asleep and spending more time in deep 
+            sleep. Your immune system is strengthened and feelings
+             such as stress and anxiety are controlled,
+             helping you to wake up truly rejuvenated.</p>
+          <a href="rest.html"><button>more</button></a>
+          <span class="count">3</span>
+      </div>
+      <div class="box">
+        <h3>Stressfree</h3>
+        <p> Need to lower stress after a stressful day? A gym session or
+           brisk walk can help. Physical activity stimulates many brain
+           chemicals that may leave you feeling happier, more relaxed and less anxious. </p>
+        <a href="run.html"><button>more</button></a>
+        <span class="count">4</span>
+    </div>
+  
+  </div>
+
+
+
+    <div class="footer">
+      <div class="col-1">
+          <h3>Useful Links</h3>
+          <a href="about us.html">About Us</a>
+          <a href="hh.html">Articles</a>
+          <a href="https://www.sciencedaily.com/news/health_medicine/fitness/">News</a>
+          
+      </div>
+      <div class="col-2">
+          <h3>contact us to start your journey now</h3>
+           <h2>+91 9481854559</h2>
+           <h2>dikshanadiga2604@gmail.com</h2>
+      </div>
+      <div class="col-3">
+          <h3>ADDRESS</h3>
+          <P>Bull Temple Rd, Basavanagudi
+               <br>Bengaluru, Karnataka <br> 560019
+          </P>
+
+      </div>
+  </div>
+  
+  </body>
+</html>

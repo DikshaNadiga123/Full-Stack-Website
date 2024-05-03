@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>food recipes</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+
+}
+
+.page {
+width: 100%;
+height: 100vh; /* 100% of viewport height */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:right;
+text-align: right;
+background-size: cover; /* Cover the entire page */
+background-position:cover; /* Center the background image */
+
+}
+
+.page:nth-child(1) {
+background-image: url('https://wholeharvest.com/cdn/shop/articles/Whole_Harvest_6.png?v=1627662271&width=2200'); /* Path to your background image for odd pages */
+}
+
+.page:nth-child(2) {
+background-image: url('https://img.freepik.com/free-vector/hazy-black-ink-texture-with-brushstrokes_125540-1360.jpg?w=2000&t=st=1709223117~exp=1709223717~hmac=25f026a6ad9bf1bfcf1a1b48bf61728c408e8fa99a338669f8fdd4dc9cb749fa' ); /* Path to your background image for even pages */
+
+}
+.page:nth-child(3) {
+background-image: url('https://img.freepik.com/free-vector/hazy-black-ink-texture-with-brushstrokes_125540-1360.jpg?w=2000&t=st=1709223117~exp=1709223717~hmac=25f026a6ad9bf1bfcf1a1b48bf61728c408e8fa99a338669f8fdd4dc9cb749fa' ); /* Path to your background image for even pages */
+
+}
+
+h1 {
+margin-bottom: 20px;
+}
+h2 {
+margin-bottom: 5px;
+text-align: left;
+}
+p3 {
+margin-top: 10px;
+font-family:Cambria;
+text-align: center;}
+
+p {
+margin: 0;
+}
+p2{font-size: small; color: rgb(62, 38, 19);}
+.recipe-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; /* Center the cards horizontally */
+padding-top:800px ;
+text-align: left;
+}
+
+.recipe-card {
+
+width: 300px;
+background-color: #bcb2ab;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin: 20px;
+overflow: hidden;
+
+}
+
+.recipe-card img {
+width: 100%;
+height: 200px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.recipe-card .content {
+padding: 20px;
+}
+
+.recipe-card h2 {
+margin-top: 10px;
+}
+
+.recipe-card p {
+margin-bottom: 10px;
+}
+
+.recipe-card .button {
+display: inline-block;
+padding: 8px 16px;
+background-color: #245126;
+color: white;
+border: none;
+border-radius: 4px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+margin-top: 10px;
+cursor: pointer;
+}
+.icon {
+font-size: 18px;
+margin-right: 5px;
+}
+b1{font-style: bold;font-size:52px ;font-family:'Rockwell';color:rgb(24, 52, 98);}
+b2{font-size:28px ;font-family: 'Lucida Sans Unicode';color:rgb(14, 32, 61);}
+
+
+</style>
+</head>
+<body>
+
+<div class="page"><pre><b1>
+
+Healthy Recipes </b1><br>
+<b2>Welcome to our collection of
+healthy recipes!
+Eating nutritious meals is
+essential for maintaining a
+balanced lifestyle.
+Our selection of healthy
+recipes is designed to provide
+you with delicious options
+that are not only satisfying
+but also good for you. </b2></pre>
+
+
+</div>
+
+<div class="page">
+<div class="recipe-container">
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/KyvZWvbB4j0gmvCoISCtXs8_wno=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GlutenFreeAlmondFlourBananaPancakes-1X1-2245-2000-5fbde3a320974a55828eb8e63799a797.jpg" alt="Recipe Image"style="object-fit:cover;">
+<div class="content">
+<h2> Almond-Flour Banana Pancakes</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>15 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>9 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 2-4 </span></p2>
+<br>
+<p3>These banana almond pancakes are gluten free, keto, low carb and healthy. </p3>
+<br> <a href="https://www.youtube.com/watch?v=Gg2iW4m5AK4" class="button" target="_blank">View Recipe </a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/FvuRt7iZXsZsgEjI1UR0EObXAow=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Fruit-Yogurt-Smoothie-beauty-76-1-259942a2f189410cbd5ea516dda88e2e.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Cherry-Pineapple Smoothie</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>8 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>4 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 1-2 </span></p2>
+<br><p3>Cherries contain vitamin E and vitamin C which reduce inflammation . </p3><br>
+<a href="https://www.youtube.com/watch?v=ek3gB2BpaAw" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/Iv7EujjS5ZYNyBQP3lOeahKN3_I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3756367-bb6a67e571f94a849e7303d9dcdb76d5.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Lemon-Garlic Marinated Shrimp</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>12 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>7 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>12 servings </span></p2>
+<br><p3> Shrimp is low in calories, has no fat or carbs, and is high in protein. </p3><br>
+<a href="https://www.youtube.com/watch?v=fU1jP_o-ukM" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+
+
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/uOSGS5b7k16JnrzLw54xZkPV-Zs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Zuppa-Rustica-0095-93cf12bcedb6426f84f674c2a77aeb31.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Cabbage & White Bean Soup</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>25 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>10 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>4 servings </span></p2>
+<br><p3> Cabbage is rich in antioxidants, it’s wholesome, nutritious and flavorful.
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=mQ-wOdRvDEw" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/16BXAPiNFIxV3wEpmcZmbH2c6B8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mushroom-tofu-stir-fry-76fc1325ac0e4866ac70851c3c043343.jpeg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Mushroom & Tofu Stir-Fry</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>20 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>8 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 2-3 </span></p2>
+<br><p3> The high level of protein makes tofu a good alternative to animal-derived meat.It's a quick and easy recipe.
+
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=h0hpWHoElak" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/eV9O2c8ckU2nv3Z8J6P1G_Ja-BA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Shaved-Brussel-Sprout-Salad-3x2-4916-2000-8dfef8c162474fd982e34c9d717a4eb3.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Shaved Brussels Sprouts Salad</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>20 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>7 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 4 </span></p2>
+<br><p3> This Shaved Brussels Sprouts Salad is a fantastic salad that ticks all the boxes; it's Gluten-Free, Low-Carb, and Vegan!
+
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=c8XHpLFDsQw" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/1dEbXBuhpngqlT_j-mVnYZqjP_g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Creamy-Cucumber-Dill-Soup-e18f7f4d99d445f1a47b3e3451a01142.jpeg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Creamy Cucumber Soup</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>35 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>12 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 4 </span></p2>
+<br><p3> Cucumbers are packed with antioxidants that can help improve skin health and lower inflammation.
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=Yp8Jl6ZYBOQ" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/i1h-AKd6mEnmgZRddoZ-9qrybVE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/EWL-Carrot-Cake-Oatmeal-Bars-BG-hero-1x1-32375-70f5f9d412c640a2b36726e693b15062.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Carrot Cake Oatmeal Bars
+</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>1 hr 50 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>12 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>9 servings </span></p2>
+<br><p3> These easy bars capture the essence of carrot cake, while offering a boost of fiber and less sugar than cake.
+
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=KncjX-uLDmU" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/Da5VrtStyJ6xcYx4Dbm1UuOE8v8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Oatmeal-Banana-Bread-ddmfs-Beauty-02-4f695968ad7d4e219193ca1e58af7526.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Oatmeal Banana Bread</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>1 hr 30 mins </span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>11 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>10 servings </span></p2>
+<br><p3>
+
+This banana bread is subtly sweet and well balanced, making it perfect for tea time or breakfast time.
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=pj2J64WM7X4" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/fArT8y8XYXX49y1vuPUPZUzLZZ8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/tik-tok-salmon-rice-bowl-3x2-1-6821f47ca5a14705bfee2ccb29dc7b03.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Sweet & Spicy Salmon Rice Bowl</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>25 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>15 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>serves 2 </span></p2>
+<br><p3>
+
+With healthy ingredients like instant brown rice, salmon and veggies, you'll have a flavorful meal in just 25 minutes.
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=YE2bMRNyGMs" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+<div class="recipe-card">
+<img src="https://www.eatingwell.com/thmb/qLnEv7TqecjHT_E8aXCtlX9SGzA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/38793671-094ef5584ee444219803492374646bd0.jpg" alt="Recipe Image"style="object-fit:cover;" >
+<div class="content">
+<h2>Chole (Chickpea Curry)</h2>
+<span class="icon">&#x23F0;</span>
+<p2><span>25 mins</span><br><span class="icon">&#x1F4D6;</span> <!-- Book icon: Unicode character for a closed book -->
+<span>12 ingredients</span><br><span class="icon">&#x1F464;</span> <!-- Person icon: Unicode character for a person -->
+<span>6 servings </span></p2>
+<br><p3>
+
+This healthy Indian recipe is a flavorful chickpea curry . Also called chana masala, it's comforting and delicious.
+
+
+
+</p3><br>
+<a href="https://www.youtube.com/watch?v=f1FTZ6dzDAk" class="button" target="_blank">View Recipe</a>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+<div class="page"></div>
+</body>
+</html>

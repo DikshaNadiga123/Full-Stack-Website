@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title >Daily Workouts</title>
+    <style>
+        .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #979292;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+        @font-face {
+            font-family:'Magica';
+            src: url(C:\Users\Test\Desktop\web\Magica.otf);
+
+        }
+        @font-face {
+            font-family:'Homrice';
+            src: url(C:\Users\Test\Desktop\web\Homrice.otf);
+            
+        }
+  
+
+        h1{
+            text-align:center;font-size:50px;color:white ;transition:0.7s}
+        h1:hover{font-size:60px}
+        h2.H:hover{
+            color:#0f365b;
+
+        }
+        h2{font-family:Edwardian Script ITC;font-size: 40px;}
+p5{font-family:Edwardian Script ITC;font-size: 15px; color:rgb(41, 99, 158);}
+        body {
+            
+            font-family:  sans-serif;
+            background-repeat: no-repeat;
+
+            margin: 0;
+            padding: 0;
+            background-color:#161f3d;
+            
+        }
+        header {
+            background-image: url(https://wpbo.org/wp-content/uploads/2020/09/KM-F20-NSWO-Silhouette-scaled-e1601429646298.jpg);
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .rp-card {
+            background-color: rgb(169, 168, 168);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .rp-icon {
+            width: 450px;
+            height: 300px;
+            margin-right: 20px;
+
+        }
+        .rp-description {
+            flex: 1;
+        }
+        img:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+        p{font-family: georgia;}
+  
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closebar()">&times;</a>
+        <a href="fit1.html">Home</a>
+        <a href="https://www.sciencedaily.com/news/health_medicine/fitness/" target="_blank">News</a>
+        <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\about us.html">About us</a>
+        <a href="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB2/Project-TheFitLab/Project-TheFitLab/login.html">Login</a>
+        
+
+      </div>  
+        
+
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openbar()">&#9776; </span>
+      
+
+      <script>
+        function openbar() {
+          document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closebar() {
+          document.getElementById("mySidebar").style.width = "0";
+        }
+
+        
+        </script>
+        <header>
+            <h1 style =" color:black;font-family:Magica";>Exercise routines</h1>
+            
+        </header>
+    <div class="container">
+       
+        <div class="rp-card">
+            
+            <a href="https://www.youtube.com/watch?v=tf685ggJv9k&pp=ygUbYmFjayB3b3Jrb3V0IHdpdGggZHVtYmJlbGxz">
+
+              <span > <img src="https://www.shutterstock.com/image-photo/female-muscular-bodybuilder-exercising-600nw-753521752.jpg" alt="rp 1 Icon" class="rp-icon"></a></span> 
+        
+            <div class="rp-description">
+                <h2 class="H">Training the Back Muscles </h2>
+                <p>Equipment Needed: Dumbbells
+                    <br>Difficulty Level:Beginner
+                    </p> <p5> Time • 20 Min</p5>
+                
+             
+        </div>
+        </div>
+        <div class="rp-card" >
+            
+            <a href="https://www.youtube.com/watch?v=rma9n_xL1i0&pp=ygUabGVnIHdvcmtvdXQgd2l0aCBkdW1iYmVsbHM%3D" target="_blank">
+            
+              <span > <img src="https://media.istockphoto.com/id/1415234530/photo/close-up-of-a-female-stretching-her-quadriceps-muscle-holding-her-black-sneaker.webp?b=1&s=170667a&w=0&k=20&c=7MsojFdb9-mH0sWUSgchnDagJIzaeJAIKQtQ6rae1hM=" alt="rp 1 Icon" class="rp-icon"></a></span> 
+        
+            <div class="rp-description">
+                <h2 class="H">Training the Leg Muscles </h2> 
+                    
+                <p>Equipment Needed: Dumbbells,Yoga Mat
+                    <br>Difficulty Level:Beginner
+                    </p> 
+                   <p5>Time • 15 Min</p5>
+                
+             
+        </div>
+        </div>
+        
+
+        <div class="rp-card">
+            <a href="https://www.youtube.com/watch?v=sZiZy6IWcuI&pp=ygUaYXJtIHdvcmtvdXQgd2l0aCBkdW1iYmVsbHM%3D" target="_blank">
+            <img src="https://www.mensjournal.com/.image/t_share/MTk2MTM2NzI4MjcxMjAxNzk3/7-concentration-curls.jpg" alt="rp 2 Icon" class="rp-icon"></a>
+            <div class="rp-description">
+                    <h2 class="H">Training the Arm Muscles
+                        </h2>
+                        <p>Equipment Needed: Dumbbells
+                            <br>Difficulty Level:Beginner
+                            </p> 
+                       <p5>Time • 15 Min</p5>
+                </div>
+            </div>
+            <div class="rp-card">
+                <a href="https://www.youtube.com/watch?v=jBhZWX91bec&pp=ygUcY2hlc3Qgd29ya291dCB3aXRoIGR1bWJiZWxscw%3D%3D" target="_blank">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_403,c_limit/6960fd01-36d9-4620-9667-7de691f37928/try-this-trainer-approved-chest-day-workout.jpg" alt="rp 2 Icon" class="rp-icon" height="300px" width="500px"></a>
+                <div class="rp-description">
+                        <h2 class="H">Training the Chest Muscles</h2>
+                        <p>Equipment Needed: Dumbbells,Bench
+                            <br>Difficulty Level:Beginner
+                            </p> 
+                        <p5>Time • 10 Min</p5>
+                    </div>
+                </div>
+
+                <div class="rp-card">
+                    <a href="https://www.youtube.com/watch?v=3oeimlA6s68&pp=ygUTYWJzIHdvcmtvdXQgYXQgaG9tZQ%3D%3D" target="_blank">
+                    <img src = "https://femina.wwmindia.com/content/2021/may/at-home-workouts-for-abs.jpg" alt="rp 3 Icon" class="rp-icon"></a>
+                    <div class="rp-description">
+                        <h2 class="H">Training the Abdominal Muscles
+    </h2>
+                         <p>Equipment Needed:Yoga Mat
+                           <br>Difficulty Level:Beginner
+                            </p> 
+                        <p5>Time • 20 Min</p5>
+                    </div>
+                </div>
+            
+            <div class="rp-card">
+                <a href="https://www.youtube.com/watch?v=ImI63BUUPwU&pp=ygUWY2FyZGlvIHdvcmtvdXQgYXQgaG9tZQ%3D%3D" target="_blank">
+                <img src = "https://builtforathletes.com/cdn/shop/articles/Running.jpg?v=1570567910" alt="rp 3 Icon" class="rp-icon"></a>
+                <div class="rp-description">
+                    <h2 class="H">Cardio
+                     </h2>
+                     <p>Equipment Needed:Yoga Mat
+                        <br>Difficulty Level:Beginner
+                        </p> 
+                    <p5>Time • 30 Min</p5>
+                </div>
+            </div>
+          
+            
+        
+    </div>
+</body>
+</html>

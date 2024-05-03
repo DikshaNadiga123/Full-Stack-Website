@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title >Wellness Articles</title>
+    <style>
+        .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #979292;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+        @font-face {
+            font-family:'Magica';
+            src: url(C:\Users\Test\Desktop\web\Magica.otf);
+
+        }
+        @font-face {
+            font-family:'Homrice';
+            src: url(C:\Users\Test\Desktop\web\Homrice.otf);
+            
+        }
+  
+
+        h1{
+            text-align:center;font-size:50px;color:white ;transition:0.7s}
+        h1:hover{font-size:60px}
+        h2.H:hover{
+            color:#2b5b67
+
+        }
+        h2{font-family:Edwardian Script ITC;font-size: 40px;}
+p5{font-family:Edwardian Script ITC;font-size: 15px; color:rgb(41, 99, 158);}
+        body {
+            
+            font-family:  sans-serif;
+            background-repeat: no-repeat;
+
+            margin: 0;
+            padding: 0;
+            background-color:#153e46;
+            
+        }
+        header {
+            background-image: url(https://sourcesforhumanservices.com/wp-content/uploads/2021/03/Depositphotos_41675821_l-2015-1536x932.jpg);
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .rp-card {
+            background-color: rgb(244, 236, 205);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .rp-icon {
+            width: 450px;
+            height: 300px;
+            margin-right: 20px;
+
+        }
+        .rp-description {
+            flex: 1;
+        }
+        img:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+        p{font-family: georgia;}
+  
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closebar()">&times;</a>
+        <a href="fit1.html">Home</a>
+        <a href="https://www.sciencedaily.com/news/health_medicine/fitness/" target="_blank">News</a>
+        <a href="about us.html">Contact</a>
+        <a hr="file:///C:/Users/Diksha%20N/OneDrive/Desktop/WEB2/Project-TheFitLab/Project-TheFitLab/login.html">Login</a>
+        
+       
+      </div>  
+        
+
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openbar()">&#9776; </span>
+      
+
+      <script>
+        function openbar() {
+          document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closebar() {
+          document.getElementById("mySidebar").style.width = "0";
+        }
+
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+       }
+        </script>
+        <header>
+            <h1 style =" color:black;font-family:Magica";>Wellness Articles</h1>
+            
+        </header>
+    <div class="container">
+       
+        <div class="rp-card">
+            
+            <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\manage.html">
+
+              <span > <img src="https://media.istockphoto.com/id/1164339481/photo/i-need-to-find-a-way-to-cope-with-this-stress.jpg?s=612x612&w=0&k=20&c=zCHO92EKSeiEszMyc5mQrAdPdv9SYgngLIdz0_XAIO8=" alt="rp 1 Icon" class="rp-icon"></a></span> 
+        
+            <div class="rp-description">
+                <h2 class="H">Managing Fitness Procrastination </h2>
+                <p>6 Tips for Managing Fitness Procrastination
+                    <br>Plus, why we procrastinate in the first place
+                    </p> <p5> Read Time • 15 Min</p5>
+                
+             
+        </div>
+        </div>
+        <div class="rp-card" >
+            
+            <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\healthyhabits.html" target="_blank">
+            
+              <span > <img src="https://www.datocms-assets.com/23496/1647380948-gettyimages-629353764-e1526383466307.jpg?fit=crop&fm=webp&h=640&w=1280" alt="rp 1 Icon" class="rp-icon"></a></span> 
+        
+            <div class="rp-description">
+                <h2 class="H">How to Form Healthy Habits
+                    </h2>
+                <p> 
+                    Reach Your Wellness Goals With These Practical Tips
+                    </p>
+                   <p5> Read Time • 10 Min</p5>
+                
+             
+        </div>
+        </div>
+        
+
+        <div class="rp-card">
+            <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\rest.html" target="_blank">
+            <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1313-when-rest-is-more-important-than-working-out-9898.jpg" alt="rp 2 Icon" class="rp-icon"></a>
+            <div class="rp-description">
+                    <h2 class="H">When Rest is More Important Than Working Out
+                        </h2>
+                    <p>
+                        Tips for Managing Rest Days
+                       </p>
+                       <p5> Read Time • 10 Min</p5>
+                </div>
+            </div>
+            <div class="rp-card">
+                <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\run.html" target="_blank">
+                <img src="https://holisticprimarycare.net/wp-content/uploads/2023/01/Medit-Diet.jpg" alt="rp 2 Icon" class="rp-icon" height="300px" width="500px"></a>
+                <div class="rp-description">
+                        <h2 class="H">How to Eat Before, During, and After a Run</h2>
+                        <p>Experts share their insights on top questions that can help optimize your eating for more energy and better performance.
+
+                        </p>
+                        <p5> Read Time • 15 Min</p5>
+                    </div>
+                </div>
+            
+            <div class="rp-card">
+                <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\selftalk.html" target="_blank">
+                <img src = "https://www.housedigest.com/img/gallery/the-type-of-mirror-people-prefer-for-their-bathroom-exclusive-survey/intro-1673972038.webp" alt="rp 3 Icon" class="rp-icon"></a>
+                <div class="rp-description">
+                    <h2 class="H">How to Practice Positive Self-Talk
+                     </h2>
+                    <p>How Your Inner Dialogue Affects Your Mental Health and Goals</p>
+                    <p5> Read Time • 14 Min</p5>
+                </div>
+            </div>
+            <div class="rp-card">
+                <a href="C:\Users\Diksha N\OneDrive\Desktop\full stack\time.html" target="_blank">
+                <img src = "https://d18zdz9g6n5za7.cloudfront.net/blog/1257-time-management-tips-a2f5.jpg" alt="rp 3 Icon" class="rp-icon"></a>
+                <div class="rp-description">
+                    <h2 class="H">Time Management Tips</h2>
+                    <p>How to manage your time effictively.</p>
+                    <p5> Read Time • 7 Min</p5>
+                </div>
+            </div>
+
+
+
+        
+    </div>
+</body>
+</html>
